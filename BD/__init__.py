@@ -1,17 +1,10 @@
 from telethon import TelegramClient
+from config import *
+import logging
 import time
-import os, logging
-from logging import basicConfig, getLogger, INFO
-"""BOTTO"""
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-)
-LOGGER = logging.getLogger(__name__)
 
-StartTime = time.time()
+logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
+                    level=logging.INFO)
 
-TOKEN = os.environ.get("TOKEN")
-API_KEY = os.environ.get("API_KEY")
-API_HASH = os.environ.get("API_HASH")
 
-tbot = TelegramClient(None, API_KEY, API_HASH)
+tbot = TelegramClient('botto', APP_KEY, API_HASH).start(bot_token=TOKEN)
