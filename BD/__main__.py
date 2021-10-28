@@ -1,7 +1,3 @@
-# (c) Copyright 21-22 lucifeermorningstar@GitHub, < https://GitHub.com/lucifeermorningstar >
-# written By Devil
-
-
 import sys
 import glob
 import logging
