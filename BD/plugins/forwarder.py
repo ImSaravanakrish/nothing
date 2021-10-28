@@ -1,5 +1,5 @@
 from BD import tbot
-import events
+from telethon.sync import events
 
 @tbot.on(events.NewMessages(incoming=True))
 async def x(e):
