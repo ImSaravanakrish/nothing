@@ -1,9 +1,8 @@
 from telethon import TelegramClient
-from telethon.sessions import StringSession
 import time
 import os, logging
 from logging import basicConfig, getLogger, INFO
-"""Dasha"""
+"""BOTTO"""
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
